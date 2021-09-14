@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DinariPay</title>
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- fonte-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
+  </head>
+  
+  <body>
+      <style>
+          .p{
+              background-image: "//rodape-home.png";
+          }
+      </style>
+
+    <body>
+      <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+          <div class="wrapper wrapper--w790">
+              <div class="card card-5">
+                  <div class="card-heading">
+                      <h2 class="title">DinariPay - Registre-se</h2>
+                  </div>
+                  <div class="card-body">
+                    <form class="card" method="post">
+                        <div class="form-row">
+                          <div class="name">Nome</div>
+                          <div class="value">
+                              <div class="input-group">
+                                  <input class="input--style-5" type="text" id="nome" required>
+                              </div>
+                          </div>
+                      </div>
+                          <div class="form-row">
+                              <div class="name">CPF</div>
+                              <div class="value">
+                                  <div class="input-group">
+                                      <input class="input--style-5" id="cpf" maxlength="14" onkeypress="formata_mascara(this,'###.###.###-##');" required>
+                                      <span id="error-cpf" style="color: red;"></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="name">Email</div>
+                              <div class="value">
+                                  <div class="input-group">
+                                      <input class="input--style-5" type="email"  onblur="validarEmail()" onfocus="redefinirMsg()" id="email" required>
+                                      <span id="error-email" style="color: red;"></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="name">Data de Nascimento</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="date"  id="dnasci" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="name">Senha</div>
+                          <div class="value">
+                              <div class="input-group">
+                                  <input class="input--style-5" type="password"  id="senha" required>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="name">Confirme sua senha</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="password"  id="csenha" required>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="form-row p-t-20">
+                        <label class="label label--block">Genero</label>
+                        <div class="p-t-15">
+                            <label class="radio-container m-r-55">Masculino
+                                <input type="radio" checked="checked"  id="ge">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio-container">Feminino
+                                <input type="radio"  id="ge">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                          <div>
+                              <button class="btn btn--radius-2 btn--blue"  onclick="formul()">Registre-se</button>
+                              <button class="btn btn--radius-2 btn--blue"  type="reset">Limpar dados</button>
+                          </div>
+                          
+                          
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <script src="js/global.js"></script>
+
+
+
+
+    <script src="js/script.js">
+      
+     
+    </script>
+    
+  </body>
+</html>
